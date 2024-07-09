@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Protractor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="js/main.js" type="module"></script>
+</head>
+<body>
+    <div class="content-block">
+        <h3>Pixel Protractor by Michael Alex Morley-Clarke (09/07/2024)</h3>
+        <div class="canvas-wrapper">
+            <canvas id="pixelArtCanvas" width="80" height="60"></canvas>
+        </div>
+    </div>
+    <div class="side-bar-right">
+        <h1>Controls</h1>
+        <h2>Line</h2>
+        <form class="line-controls" id="pix-length" onsubmit="return false;">
+            <label for="length">Length</label>
+            <input type="text" id="length_input" value="50" />
+            <input type="range" id="length" min="1" max="100" step="1" value="50" />
+        </form>
+        <form class="line-controls" id="ang-rotation" onsubmit="return false;">
+            <label for="angle">2D</label>
+            <input type="text" id="angle_input" value="45" />
+            <label>°</label>
+            <input type="range" id="angle" min="0" max="360" step="0.5" value="45" />
+        </form>
+        <form class="line-controls" id="hoz-rotation" onsubmit="return false;">
+            <label for="rotationX">3D</label>
+            <input type="text" id="rotationX_input" value="0" />
+            <label>°</label>
+            <input type="range" id="rotationX" min="0" max="360" step="0.5" value="0" />
+        </form>
+        <h2>Canvas</h2>
+        <form class="canvas-controls" id="scale-canvas" onsubmit="return false;">
+            <label for="scale">Scale</label>
+            <input type="text" id="scale_input" value="12" />
+            <input type="range" id="scale" min="1" max="48" step="1" value="12" />
+            
+            <button class="standard-button" id="rotate-canvas">Rotate</button>
+        </form>
+        <h2>Colours</h2>
+        <form class="color-controls" id="line-colors" onsubmit="return false;">
+            <div>
+                <label for="color1">Colour 1</label>
+                <input type="color" id="color1" value="#000000" />
+            </div>
+            <div>
+                <button id="equal-colors">&gt;</button>
+                <button id="reset-colors">&#8999;</button>
+            </div>
+            <div>
+                <label for="color2">Colour 2</label>
+                <input type="color" id="color2" value="#FFFFFF" />
+            </div>
+        </form>
+        <h2>Export</h2>
+        <div class="button-container">
+            <button class="standard-button" id="download-png">Download As PNG</button>
+        </div>
+    </div>
+</body>
+</html>

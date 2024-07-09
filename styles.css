@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#d3d6e2;
+}
+html, body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.side-bar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw;
+    height: 100vh;
+    background-color: #494a50;
+    flex-direction: column;
+    row-gap: 2vh;
+    justify-content: space-between;
+    text-align: center;
+    border-left: 10px solid #404146;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-block {
+    width: 75vw;
+    height: 100vh;
+    background-color: #494a50;
+}
+.canvas-wrapper {
+    position: absolute;
+    left:40vw;
+    top:50vh;
+    transform: translate(-50%, -50%);
+}
+form {
+    font-size: 1em;
+}
+canvas {
+    image-rendering: pixelated;
+    background-color: #404146;
+    scale:12;
+    transform: rotate(0deg);
+}
+canvas.vertical {
+    transform: rotate(90deg);
+}
+input[type="range"] {
+    width: 96%;
+}
+input[type="text"] {
+    width: 40px;
+    border-radius: 3px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 3px;
+    background-color: #404146;
+}
+input[type="color"] {
+    width: 8vw;
+    height: 8vw;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+.button-container button {
+    padding: 3px;
+    cursor: pointer;
+}
+.color-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.color-controls button {
+    width: 2vw;
+    height: 2vw;
+    padding: 3px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.color-controls button:hover {
+    background-color: #404146;
+}
+h1 {
+    font-size: 1.5em;
+    background-color: #404146;
+    height: 5vh;
+    padding: 1vh;
+    margin-bottom: 3vh;
+}
+h2 {
+    font-size: 1em;
+    border-bottom: 1px solid #404146;
+    height: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+h3 {
+    font-size: 0.6em;
+    font-weight: 100;
+}
+.standard-button {
+    padding: 3px;
+    cursor: pointer;
+    background-color: #404146;
+    width: 100%;
+    height: 4vh;
+}
